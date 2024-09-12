@@ -1,0 +1,28 @@
+CREATE DATABASE cadastrou;
+
+USE cadastrou;
+
+CREATE TABLE cadastro (
+    idcadastro INTEGER PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(45) NOT NULL,
+    telefone VARCHAR(11) NOT NULL,
+    endereco VARCHAR(255) NOT NULL,
+    login VARCHAR(25) NOT NULL,
+    senha VARCHAR(25) NOT NULL,
+    dt_Nascimento DATE NOT NULL,
+    email VARCHAR(25) NOT NULL
+);
+
+INSERT INTO cadastro values(null,
+	"Amanda Sampaio",
+    "11965134588",
+    "av bom pastor, n1554, santo amaro, sao paulo-sp",
+    "AmandaSilva",
+    "Amanda123",
+    10840113,
+    "amandasamp01@gmail.com"
+    );
+    
+select * from cadastro;
+
+-- DROP DATABASE cadastrou;
